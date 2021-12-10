@@ -23,13 +23,16 @@ static void firstPass(int** input, int width, int height)
 
 	int upper_bound = m + n;
 	for (int x = 0; x < m; x++) {
+
 		if (input[x][0] == 0) {
 			output[x][0] = upper_bound;
 		}
+
 		// forward scan
 		for (int y = 1; y < n; y++) {
 			output[x][y] = input[x][y] ? 0 : (1 + output[x][y - 1]);
 		}
+
 		// backward scan
 		for (int y = n - 1; y > 0; y--) {
 			if (output[x][y] < output[x][y - 1])
@@ -65,6 +68,7 @@ static void secondPass(int** input, int width, int height)
 	int * t = calloc(m, sizeof(int));
 
 	for (int y = 0; y < n; y++) {
+
 		// forward scan ////////////////////////////////////
 		q = 0;
 		s[0] = 0;
@@ -84,6 +88,7 @@ static void secondPass(int** input, int width, int height)
 				}
 			}
 		}
+
 		// backward scan ///////////////////////////////////
 		for (int u = m; u > 0; u--) {
 			output[u - 1][y] = bowl(u - 1, s[q], input[s[q]][y]);			

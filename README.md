@@ -17,7 +17,7 @@ cd build
 cmake ..
 make
 ```
-Then to generate the data with the default parameters, you just need to run the executable:
+Then, to generate the data with the default parameters, you just need to run the executable:
 
 ```sh
 ./Glover

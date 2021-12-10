@@ -36,7 +36,7 @@ Secondly, the 10 degrees of freedoms that encode the Hand Pose are written one b
 
 This pattern repeats itself for every sample.
 
-### How to custom the dataset 
+### How to custom the data
 
 You can change several configuration parameters before generating the dataset.
 To set an option you just have to follow the pattern ```-option=value```.

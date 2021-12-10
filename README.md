@@ -30,7 +30,7 @@ First thing to do is to read the header which consist of 4 bytes: the first one 
 
 After those 4 bytes, the data is organised sample by sample as follow:
 
-- first, the sample is recorded in row major order. The number of bytes is _size_ x _size_.
+- first, the sample is recorded in row major order. The number of bytes is (_size_ x _size_).
 - secondly the 10 degrees of freedoms that encode the Hand Pose are written one by one (each of the DOF is encoded in a single byte). 
 
 This pattern repeat itself for every samples.

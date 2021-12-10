@@ -25,4 +25,15 @@ Then to generate the data with the default parameters, you just need to run the 
 ### How to custom the dataset 
 
 You can change several configuration parameters before generating the dataset.
-To set an option you just have to follow the pattern ```sh -option=value```
+To set an option you just have to follow the pattern ```-option=value```.
+Here is the list of the parameters available:
+
+- the _size_ of the sample (default is 48)
+- the _number_ of samples (default is 10000)
+- the random _seed_ used by the algorithm rngs (default is 0)
+- the Euler Angles that define the rotation of the mesh (default is 0, 0, 0)
+
+Here is an example:
+````
+ ./glover -size=32 -number=5000 -seed=1234 -alpha=0.8
+ ```

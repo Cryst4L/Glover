@@ -9,7 +9,7 @@ The main difference with the MNIST is that shapes are computer generated, which 
 
 ### How to generate data
 
-The first thing to do is to build the project with CMake. To do so place youtself in the root folder and type the following:
+The first thing to do is to build the project with CMake. To do so place yourself in the root folder and type the following:
 
 ```sh
 mkdir build 

@@ -51,7 +51,7 @@ Here is an example:
 ```
  ./Glover -size=32 -number=5000 -seed=1234 -alpha=0.8
  ```
-By default the name of the generated dataset is _glover-dataset.bytes_. But you can change it by adding a destination name after the option:
+By default the name of the generated dataset is _glover-dataset.bytes_. But you can change it by adding a destination name after the options:
 ```
 ./Glover -size=32 train-dataset.bytes
 ```

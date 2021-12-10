@@ -18,7 +18,9 @@ static void firstPass(int** input, int width, int height)
 	for (int x = 0; x < m; x++)
 		for (int y = 0; y < n; y++)
 			output[x][y] = 0;
+
 	////////////////////////////////////////////////////////
+
 	int upper_bound = m + n;
 	for (int x = 0; x < m; x++) {
 		if (input[x][0] == 0) {
@@ -34,7 +36,9 @@ static void firstPass(int** input, int width, int height)
 				output[x][y - 1] = 1 + output[x][y];
 		}
 	}
+
 	////////////////////////////////////////////////////////
+
 	for (int x = 0; x < m; x++)
 		for (int y = 0; y < n; y++)
 			input[x][y] = output[x][y];
@@ -59,6 +63,7 @@ static void secondPass(int** input, int width, int height)
 
 	int * s = calloc(m, sizeof(int));
 	int * t = calloc(m, sizeof(int));
+
 	for (int y = 0; y < n; y++) {
 		// forward scan ////////////////////////////////////
 		q = 0;
@@ -86,7 +91,9 @@ static void secondPass(int** input, int width, int height)
 				q--;
 		}
 	}
+
 	////////////////////////////////////////////////////////
+
 	for (int x = 0; x < m; x++)
 		for (int y = 0; y < n; y++)
 			input[x][y] = output[x][y];
@@ -97,4 +104,10 @@ static void secondPass(int** input, int width, int height)
 	free(output);
 	free(s);
 	free(t);
+}
+
+void distanceTransform(int ** input, int width, int height)
+{
+	firstPass(input, width, height);
+	secondPass(input, width, height);
 }

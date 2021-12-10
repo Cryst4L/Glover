@@ -34,6 +34,6 @@ Here is the list of the parameters available:
 - the Euler Angles that define the rotation of the mesh (default is 0, 0, 0)
 
 Here is an example:
-````
+```
  ./glover -size=32 -number=5000 -seed=1234 -alpha=0.8
  ```

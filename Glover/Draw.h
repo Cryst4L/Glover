@@ -5,14 +5,14 @@
 #include <math.h>
 
 #include "Types.h"
-
+/*
 void draw(BYTE * data, int width, int height)
 {
 	for (int i = 0; i < width; i++)
 		for (int j = 0; j < height; j++)
 			data[width * i + j] = 255 * (0.5 * sin(0.1 * (i + j)) + 0.5);
 }
-
+*/
 void drawFlatLine(int x1, int x2, int y, BYTE * data, int width, int height)
 {
 	if (x1 == x2)

@@ -62,7 +62,7 @@ This project is released under MIT license.
 ```
 MIT License
 
-Copyright (c) 2016-2021, Benjamin D. Halimi
+Copyright (c) 2020-2021, Benjamin D. Halimi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

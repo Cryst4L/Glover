@@ -22,7 +22,7 @@ Then to generate the data with the default parameters, you just need to run the 
 ```sh
 ./Glover
 ```
-# How to read the data
+### How to read the data
 
 To read the data, you want to open the file in binary mode.
 

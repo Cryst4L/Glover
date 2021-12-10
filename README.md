@@ -22,6 +22,19 @@ Then to generate the data with the default parameters, you just need to run the 
 ```sh
 ./Glover
 ```
+# How to read the data
+
+To read the data you wan to open the file in binary mode.
+
+First thing to do is to read the header which consist of 4 bytes: the first one give the size of the samples, and the three others give the number of samples.
+
+After those 4 bytes, the data is organised sample by sample as follow:
+
+- first, the sample is recorded in row major order. The number of bytes is _size_x_size_.
+- secondly the 10 degrees of freedoms that encode the Hand Pose are written one by one (each of the DOF is encoded in a single byte). 
+
+This pattern repeat itself for every samples.
+
 ### How to custom the dataset 
 
 You can change several configuration parameters before generating the dataset.

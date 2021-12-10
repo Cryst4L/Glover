@@ -1,4 +1,4 @@
-## Glover
+# Glover
 
 Glover is synthetic Hand Pose dataset generator written in C99. It aims to be regarded as a modern alternative to the MNIST. 
 The main difference with the MNIST is that shapes are computer generated, which ensures zero ambiguity between the samples.

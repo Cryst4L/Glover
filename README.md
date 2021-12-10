@@ -22,3 +22,7 @@ Then to generate the data with the default parameters, you just need to run the 
 ```sh
 ./Glover
 ```
+### How to custom the dataset 
+
+You can change several configuration parameters before generating the dataset.
+To set an option you just have to follow the pattern ```sh -option=value```

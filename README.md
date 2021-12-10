@@ -32,7 +32,7 @@ After those 4 bytes, the data are organised sample by sample as follows:
 
 First, the sample is recorded in row major order. The number of bytes is (_size_ x _size_).
 
-Secondly the 10 degrees of freedoms that encode the Hand Pose are written one by one (each one of the DOF is encoded in a single byte). 
+Secondly, the 10 degrees of freedoms that encode the Hand Pose are written one by one (each one of the DOF is encoded in a single byte). 
 
 This pattern repeats itself for every sample.
 

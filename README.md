@@ -7,7 +7,7 @@ The main difference with the MNIST is that shapes are computer generated, which 
   <img src="https://github.com/Cryst4L/Glover/blob/main/hands.png"/>
 </p>
 
-### How to generate data
+### How to generate the data
 
 The first thing to do is to build the project with CMake. To do so place yourself in the root folder and type the following:
 

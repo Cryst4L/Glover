@@ -46,16 +46,17 @@ static void firstPass(int** input, int width, int height)
 static void secondPass(int** input, int width, int height)
 {
 	int m = height, n = width;
+
 	int **output = (int **) malloc(height * sizeof(int *));
-		for (int r = 0; r < height; r++)
-			output[r] = (int *) malloc(width * sizeof(int));
+	for (int r = 0; r < height; r++)
+		output[r] = (int *) malloc(width * sizeof(int));
+
 	for (int x = 0; x < m; x++)
 		for (int y = 0; y < n; y++)
 			output[x][y] = 0;
 	////////////////////////////////////////////////////////
 	int q = 0;
-	//std::vector <int> s(m, 0);
-	//std::vector <int> t(m, 0);
+
 	int * s = calloc(m, sizeof(int));
 	int * t = calloc(m, sizeof(int));
 	for (int y = 0; y < n; y++) {
@@ -92,6 +93,7 @@ static void secondPass(int** input, int width, int height)
 	
 	for (int i = 0; i < height; i++)
 		free(output[i]);
+
 	free(output);
 	free(s);
 	free(t);

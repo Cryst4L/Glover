@@ -24,16 +24,16 @@ Then to generate the data with the default parameters, you just need to run the 
 ```
 # How to read the data
 
-To read the data you wan to open the file in binary mode.
+To read the data, you want to open the file in binary mode.
 
-First thing to do is to read the header which consist of 4 bytes: the first one give the size of the samples, and the three others give the number of samples.
+The first thing to do is to read the header which consists of 4 bytes: the first one gives the size of the samples, and the three others give the number of samples.
 
-After those 4 bytes, the data is organised sample by sample as follow:
+After those 4 bytes, the data are organised sample by sample as follows:
 
-- first, the sample is recorded in row major order. The number of bytes is (_size_ x _size_).
-- secondly the 10 degrees of freedoms that encode the Hand Pose are written one by one (each of the DOF is encoded in a single byte). 
+First, the sample is recorded in row major order. The number of bytes is (_size_ x _size_).
+Secondly the 10 degrees of freedoms that encode the Hand Pose are written one by one (each one of the DOF is encoded in a single byte). 
 
-This pattern repeat itself for every samples.
+This pattern repeats itself for every sample.
 
 ### How to custom the dataset 
 
